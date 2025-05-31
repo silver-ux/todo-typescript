@@ -39,7 +39,6 @@ const Input = ({ setPosts }: Props) => {
   return (
     <form onSubmit={(e) => setItems(e)}>
       <input
-        autoFocus
         type="text"
         value={todo}
         className="w-full border-1 p-5 text-2xl rounded-md"
