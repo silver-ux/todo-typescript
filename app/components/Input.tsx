@@ -44,6 +44,7 @@ const Input = ({ posts, setPosts }: Props) => {
         value={todo}
         className="w-full border-1 p-5 text-2xl rounded-md"
         onChange={(e) => setTodo(e.target.value)}
+        placeholder="ここに入力してください。"
       />
       <div className="mt-3 flex">
         <button
