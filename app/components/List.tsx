@@ -12,7 +12,7 @@ const List = ({ posts, setPosts }: Props) => {
 
   return (
     <div className="w-full 800:w-[70%] mx-auto text-left">
-      <ul className="text-[16px] 800:text-2xl mt-5">
+      <ul className="text-[20px] 800:text-2xl mt-5">
         {posts.map((post, i) => (
           <li
             className=" p-5 my-2 rounded-md relative border-1 shadow-md bg-gray-50"
