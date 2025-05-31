@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="mt-[4rem] text-center">
       <h1 className="font-bold text-4xl mb-7">ToDo App</h1>
-      <Input setPosts={setPosts} />
+      <Input posts={posts} setPosts={setPosts} />
       <List posts={posts} setPosts={setPosts} />
     </div>
   );

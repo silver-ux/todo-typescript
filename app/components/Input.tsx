@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from "react";
 
 type Props = {
+  posts: string[];
   setPosts: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
-const Input = ({ setPosts }: Props) => {
+const Input = ({ posts, setPosts }: Props) => {
   const [todo, setTodo] = useState<string>("");
 
   useEffect(() => {
@@ -16,10 +17,10 @@ const Input = ({ setPosts }: Props) => {
   }, []);
 
   //setItem用
-  // useEffect(() => {
-  //   const str = JSON.stringify(posts);
-  //   localStorage.setItem("posts", str);
-  // }, [posts]);
+  useEffect(() => {
+    const str = JSON.stringify(posts);
+    localStorage.setItem("posts", str);
+  }, [posts]);
 
   const setItems = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
